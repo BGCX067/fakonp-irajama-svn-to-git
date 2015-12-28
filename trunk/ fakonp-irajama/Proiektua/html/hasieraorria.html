@@ -1,0 +1,98 @@
+
+<html>
+<head>
+	<title>Proiektua</title>
+<script language="javascript" type="text/javascript">
+// Beste aparteko fitx batetan=> <script language="javascript" src="nireskripta.js>
+// Hemen gure Javascript kodea kokatuko dugu
+function reseteatu() {
+document.formularioa.emaila.value="";
+document.formularioa.pasahitza.value="";
+
+}
+
+function identifikatu() {
+//*-dun eremuak betetzea derrigorrezkoa da.
+if(document.formularioa.emaila.value == "" || document.formularioa.pasahitza.value == "" ) {
+	alert("*-dun eremuak bete behar dira");
+	return false;
+	}
+
+//Datu basean dauden ikusi 
+	//eta pasahitza ongi sartu den
+            
+}
+
+function agurtu(agurra){
+alert(agurra);
+}
+
+</script>
+</head>
+<body onLoad="agurtu('Kaixo, ongi etorri!!')" onUnload="agurtu('Agur!!!!!')">
+
+
+
+<form name="formularioa">
+<p>
+<fieldset style="border-color: #00FF00; width:550">
+<legend>  Erabiltzailea identifikatu </legend>
+<table>
+<p>
+	<tr>
+	
+		<td>Emaila*:</td>
+		<td><input type="text" name="emaila" value=""/></td>
+		<td>Pasahitza*:</td>
+		<td><input type="text" name="pasahitza" value=""/></td>
+		<td><input type="submit" value="OK!" onclick="identifikatu();"/></td>
+		<td><input type="button" value="Reset" onclick="reseteatu();"/></td>
+	</tr>
+</p>
+
+<p>
+	<tr>
+
+</br>
+		<td><input type="submit" value="Enpresa berria" onclick="enpresaErregistratu();"/></td>
+		<td><input type="submit" value="Bezero berria" onclick="bezeroaErregistratu();"/></td>
+	</tr>	
+</p>		
+
+</table>
+</legend>
+</p>
+
+
+</form>
+
+
+
+</br>
+</br>
+<l3>Gaurko eskaintzak </l3>
+<table border="1">
+	<tr>
+		<th>Argazkia</th>
+		<th>Deskribapena</th>
+		<th>Prezioa</th>
+		<th>Info gehiago</th>
+	</tr>
+	<tr>
+		<td align="center"> <a href="../idoia.jpg"> DBetik hartu irudia</a></td>
+		<td align="center"> DBdetik hartu deskribapena </td>
+		<td align="center"> DBdetik hartu prezioa</td>
+		<td align="center"> <a href="infoGehiago.html">informazio gehiago</a> </td>
+	</tr>
+	
+
+</table>
+	
+</br>
+
+
+
+
+
+</body>
+</html> 

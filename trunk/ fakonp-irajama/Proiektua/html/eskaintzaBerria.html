@@ -1,0 +1,100 @@
+
+<html>
+<head>
+
+<title>HTML laborategia</title>
+<script language="javascript" type="text/javascript">
+// Beste aparteko fitx batetan=> <script language="javascript" src="nireskripta.js>
+// Hemen gure Javascript kodea kokatuko dugu
+function reseteatu() {
+document.formularioa.izenburua.value="";
+document.formularioa.jprezioa.value="";
+document.formularioa.sprezioa.value="";
+document.formularioa.hdata.value="";
+document.formularioa.adata.value="";
+document.formularioa.txartelakbez.value="";
+document.formularioa.txartelakmax.value="";
+document.formularioa.shdata.value="";
+document.formularioa.sadata.value="";
+//input type=file berdin egiten da
+document.formularioa.argazkia.value="";
+//textarea
+document.formularioa.deskribapena.value="Hemen idatzi";
+}
+
+
+
+function agurtu(agurra){
+alert(agurra);
+}
+
+</script>
+</head>
+
+<body onLoad="agurtu('Kaixo, ongi etorri!!')" onUnload="agurtu('Agur!!!!!')">
+
+
+<form name="formularioa">
+<p>
+<fieldset style="border-color: #00FF00; width:550">
+<legend>  Eskaintza berria </legend>
+<table>
+	<tr>
+	<td>Izenburua*:</td>
+	<td><input type="text" name="izena" value=""/></td>
+	</tr>
+	<tr>
+	<td>Argazkia:</td>
+	<td><input type="file" name="argazkia" value=""/></td>
+	</tr>
+	<tr>
+	<td> Deskribapena:</td>
+		<td><textarea cols="50" rows="5" name="deskribapena">Hemen idatzi</textarea></td>
+	
+	</tr>
+	<tr>
+	<td>Jatorrizko prezioa:</td>
+	<td><input type="text" name="jprezioa" value=""/></td>
+	</tr>
+<tr>
+	<td>Salmenta prezioa:</td>
+	<td><input type="text" name="sprezioa" value=""/></td>
+	</tr>
+	<tr>
+	<td>Data-hasiera:</td>
+	<td><input type="text" name="hdata" value=""/></td>
+	</tr>
+	<tr>
+	<td>Data-amaiera:</td>
+	<td><input type="text" name="adata" value=""/></td>
+	</tr>
+<tr>
+	<td>Txartel kopuru maximoa:</td>
+	<td><input type="text" name="txartelakmax" value=""/></td>
+	</tr>
+<tr>
+	<td>Txartelak bezeroko:</td>
+	<td><input type="text" name="txartelakbez" value=""/></td>
+	</tr>
+<tr>
+	<td>Saldu data hasiera:</td>
+	<td><input type="text" name="shdata" value=""/></td>
+	</tr>
+	<tr>
+	<td>Saldu data amaiera:</td>
+	<td><input type="text" name="sadata" value=""/></td>
+	</tr>
+	<tr>
+
+</br>
+		<td><input type="submit" value="Reset" onclick="reseteatu();"/></td>
+		<td><input type="submit" value="Ok!" onclick=""/></td>
+	</tr>	
+</table>
+	
+</fieldset>
+</p>
+</form>
+
+</body>
+</html>
